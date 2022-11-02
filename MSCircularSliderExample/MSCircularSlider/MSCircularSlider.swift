@@ -578,7 +578,10 @@ public class MSCircularSlider: UIControl {
         
         setNeedsDisplay()
     }
-    
+
+    override public func gestureRecognizerShouldBegin(_ gestureRecognizer: UIGestureRecognizer) -> Bool {
+        return false
+    }
     
     //================================================================================
     // DRAWING METHODS
